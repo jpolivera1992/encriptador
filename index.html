@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="izquierda">
+            <img class="logo-alura" src="img/alura-icono.ico" alt="Logotipo Alura">
+            <form>
+                <textarea id="texto-principal" type="text" placeholder="Ingrese su texto a encriptar!"></textarea>
+                <div>
+                    <div class="alerta">
+                        <img src="img/exclamacion.png">
+                        <span>Solo letras minúsculas y sin acentos.</span>
+                    </div>
+                    <div class="botones">
+                        <button class="bt-encripto" id="encriptar">Encriptar</button>
+                        <button class="bt-desencripto" id="desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="derecha">
+            <div class="sin-retorno">
+                <img src="img/lock3.png" id="mensaje-no-encontrado" alt="Ningún mensaje encontrado">
+                <h3 class="titulo-sin-retorno">Ningún mensaje fue encontrado</h3>
+                <p>Ingrese el texto que desees encriptar o desencriptar</p>
+            
+            </div>
+            <div class="texto-encriptado d-none">
+                    <p></p>
+                <button class="bt-copiar" id="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a target="_blank" href="https://www.linkedin.com/in/juan-pablo-olivera-139841215/">
+            <img src="img/logotipo-de-linkedin.png" class="logo-link" alt="linkedin">
+        </a>
+        <a target="_blank" href="https://github.com/jpolivera1992">
+            <img src="img/github.png" class="logo-link" alt="github">
+        </a>
+        <p> ® Derechos reservados 2024-∞ Juan Pablo Olivera</p>
+    </footer>
+
+    <script src="js/encriptar-y-desencriptar.js"></script>
+    <script src="js/encriptador.js"></script>
+    <script src="js/copiar.js"></script>
+    <script src="js/text-area.js"></script>
+</body>
+
+</html>

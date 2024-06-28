@@ -1,0 +1,209 @@
+:root {
+    --dark-red-100: #b10000;
+    --dark-red-200: #990000;
+    --dark-red-300: #660000;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+
+
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #485057;
+    --gray-500: #343A40;
+    --black-000: #333333;
+
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--gray-200);
+}
+
+.container {
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+
+.izquierda {
+    width: 60%;
+    height: 100%;
+    padding-top: 40px;
+}
+
+form {
+    padding-top: 60px;
+    padding-left: 110px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: calc(100% - 148px);
+}
+
+form textarea {
+    width: 100%;
+    border: none;
+    font-family: "Inter";
+    outline: none;
+    color: var(--dark-blue-300);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    background-color: transparent;
+}
+
+form textarea::placeholder {
+    color: var(--black-000);
+}
+
+button {
+    width: 328px;
+    height: 67px;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid var(--black-000);
+    border-radius: 24px;
+    padding: 24px;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 19px;
+    outline: none;
+}
+
+.alerta {
+    font-family: 'Inter';
+    font-size: 12px;
+    color: var(--black-000);
+    opacity: 0.8;
+    margin: 0 0 16px 8px;
+}
+
+.alerta img {
+    margin-bottom: -4px;
+}
+
+.botones {
+    display: flex;
+    gap: 30px;
+}
+
+button.bt-encripto {
+    background-color: var(--dark-red-100);
+    color: #FFFFFF;
+}
+
+button.bt-desencripto {
+    background-color: #d4d5d6;
+    color: var(--black-000);
+}
+
+.bt-copiar {
+    width: 270px;
+    margin-top: 30px;
+    background-color: #f0f2f4;
+    color: var(--dark-blue-300);
+    margin-left: 10px;
+}
+
+.bt-copiar:hover {
+    background-color: var(--dark-red-100);
+    color: var(--gray-100);
+    cursor: pointer; 
+  }
+
+.derecha {
+    width: 400px;
+    height: 85vh;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.521);
+    border-radius: 32px;
+    margin: 35px 40px 20px 40px;
+    padding: 30px;
+    overflow-y: auto;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texto-encriptado p {
+    overflow: auto;
+}
+
+.sin-retorno img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo-sin-retorno {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--gray-500);
+
+    margin: 32px 32px 32px 16px;
+}
+
+.sin-retorno p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-400);
+}
+
+.texto-encriptado {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-encriptado p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: left;
+    color: var(--gray-400);
+    word-break: break-all;
+}
+
+.d-none {
+    display: none;
+    pointer-events: none;
+}
+
+footer {
+    text-align: center;
+    color: #0b0a0a;
+    background: linear-gradient(var(--dark-red-100), var(--dark-red-200), var(--dark-red-300));
+    padding: 40px 0;
+    display: block;
+    height: auto;
+}
+
+.logo-link {
+    height: 70px;
+    margin: 15px 5px 20px 5px;
+}
+
+.logo-link:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
